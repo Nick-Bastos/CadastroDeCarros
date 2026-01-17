@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController //Define a classe como controller REST
 @RequestMapping //Mapeia URL + método HTTP
-public class Controller {
+public class CadastroController {
     @GetMapping("/boasvindas")//Mapeia requisições HTTP GET
     public String boasVindas(){
         return "Essa é minha primeira mensagem nessa rota";
