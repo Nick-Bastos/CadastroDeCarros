@@ -1,9 +1,7 @@
 package dev.java10x.CadastroDeCarros.Carros;
 
-import dev.java10x.CadastroDeCarros.Serviço.ServicosModel;
+import dev.java10x.CadastroDeCarros.Servico.ServicosModel;
 import jakarta.persistence.*;
-
-import java.util.List;
 
 @Entity
 @Table(name = "tb_carros")

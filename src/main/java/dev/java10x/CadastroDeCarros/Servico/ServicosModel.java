@@ -1,4 +1,4 @@
-package dev.java10x.CadastroDeCarros.Serviço;
+package dev.java10x.CadastroDeCarros.Servico;
 
 import dev.java10x.CadastroDeCarros.Carros.CarroModel;
 import jakarta.persistence.*;
@@ -17,7 +17,7 @@ public class ServicosModel {
 
     private String limpezaCompleta;
 
-    //OneToMany - um serviço para vários carros
+    //OneToMany - um servico para varios carros
     @OneToMany (mappedBy = "servico")
     private List<CarroModel> carro;
 }
