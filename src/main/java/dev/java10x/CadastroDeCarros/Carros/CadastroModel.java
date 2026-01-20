@@ -1,4 +1,4 @@
-package dev.java10x.CadastroDeCarros;
+package dev.java10x.CadastroDeCarros.Carros;
 
 import jakarta.persistence.*;
 
