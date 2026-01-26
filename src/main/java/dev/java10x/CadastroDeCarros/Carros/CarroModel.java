@@ -2,9 +2,15 @@ package dev.java10x.CadastroDeCarros.Carros;
 
 import dev.java10x.CadastroDeCarros.Servico.ServicosModel;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "tb_carros")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class CarroModel {
 
     @Id
@@ -17,19 +23,4 @@ public class CarroModel {
     @JoinColumn(name = "servicos_id") //foreing key (juntando as colunas servicos e carros)
     private ServicosModel servico;
 
-
-    public CarroModel() {
-    }
-
-    public CarroModel(String placa) {
-        this.placa = placa;
-    }
-
-    public String getPlaca() {
-        return placa;
-    }
-
-    public void setPlaca(String placa) {
-        this.placa = placa;
-    }
 }
