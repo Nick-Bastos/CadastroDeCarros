@@ -17,6 +17,7 @@ public class CarroModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(unique = true)
     private String placa;
 
     @ManyToOne   //Um carro para um serviço

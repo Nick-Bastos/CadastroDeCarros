@@ -2,11 +2,17 @@ package dev.java10x.CadastroDeCarros.Servico;
 
 import dev.java10x.CadastroDeCarros.Carros.CarroModel;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Entity
 @Table(name = "tb_servicos")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class ServicosModel {
 
     @Id
