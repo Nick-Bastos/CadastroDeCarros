@@ -1,4 +1,4 @@
-package dev.java10x.CadastroDeCarros.Carros;
+package dev.java10x.CadastroDeCarros;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
